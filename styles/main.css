@@ -1,0 +1,162 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+    height: 100vh;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+
+.footer {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 10px;
+    position: relative;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    font-size: 9rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#date {
+    text-align: center;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-top: 0;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-height: 45px;
+    opacity: 1;
+    animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.weather {
+    padding: 1.0625rem 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.weather-pic img {
+    opacity: 0;
+    width: 45px;
+    height: 24px;
+    object-fit: cover;
+}
+
+.weather-temp {
+    height: max-content;
+    font-size: 24px;
+}
+
+.weather-metric {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-location {
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+#skeletonIcon svg {
+    width: 45px;
+    height: 24px;
+}
+
+.animationStop {
+    animation: none;
+}
+
+.todo-toggle {
+    padding: 0.625rem;
+    height: max-content;
+    font-size: 2em;
+}
+
+.todo-toggle:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: #6c757d;
+    background-color: #e9ecef;
+}
+
+#popper-popup {
+    display: none;
+    background-color: #ffffff;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 13px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+}
+
+#popper-popup[show-popper] {
+    display: block;
+    z-index: 9999;
+}
+
+.modal-footer {
+    justify-content: space-between;
+    margin-top: 10px;
+}
