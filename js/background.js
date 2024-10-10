@@ -59,15 +59,25 @@ function timeUntilNextWallpaperChange() {
     return nextChangeTime - now;
 }
 
+let timeoutId;
+
 // рекурсивный вызов функции для смены бэкграунда
 function scheduleNextWallpaperChange() {
     changeWallpaper();
 
     const timeUntilChange = timeUntilNextWallpaperChange();
 
-    setTimeout(() => {
+    if (timeoutId) {
+        clearTimeout(timeoutId);
+    }
+
+    timeoutId = setTimeout(() => {
         scheduleNextWallpaperChange();
     }, timeUntilChange);
 }
 
 scheduleNextWallpaperChange();
+
+window.addEventListener("beforeunload", () => {
+    clearInterval(timeoutId);
+});
