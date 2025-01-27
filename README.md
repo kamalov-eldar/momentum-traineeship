@@ -50,21 +50,6 @@
 - Не разрешается использовать jQuery, другие js-библиотеки и фреймворки
 - js-код приложения должен быть читаемым, без минимизации или обфускации
 
-## Материалы
-- [Работа с dom-элементами](https://learn.javascript.ru/searching-elements-dom)
-- [TextContent](https://learn.javascript.ru/basic-dom-node-properties#textcontent-prosto-tekst)
-- [Дата и время](https://learn.javascript.ru/date)
-- [Date.prototype.toLocaleTimeString()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString)
-- [Date.prototype.toLocaleDateString()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString)
-- [Рекурсивный setTimeout](https://learn.javascript.ru/settimeout-setinterval#rekursivnyy-settimeout)
-- [Шаблонные строки](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Template_literals)
-- [Тег &lt;input&gt;](https://developer.mozilla.org/ru/docs/Web/HTML/Element/Input)
-- [Страница: DOMContentLoaded, load, beforeunload, unload](https://learn.javascript.ru/onload-ondomcontentloaded)
-- [localStorage](https://developer.mozilla.org/ru/docs/Web/API/Window/localStorage)
-- [Dведение в браузерные события](https://learn.javascript.ru/introduction-browser-events)
-- [стили и классы](https://learn.javascript.ru/styles-and-classes)
-- [Изменение документа](https://learn.javascript.ru/modifying-document)
-- [Асинхронность в JavaScript](https://doka.guide/js/async-in-js/)
-- [async/await](https://doka.guide/js/async-await/)
+
 
 
